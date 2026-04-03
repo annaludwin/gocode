@@ -1,0 +1,22 @@
+{
+  "name": "fashionhub-e2e",
+  "version": "1.0.0",
+  "description": "E2E FashionHub (Playwright)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:local": "cross-env TEST_ENV=local playwright test",
+    "test:staging": "cross-env TEST_ENV=staging playwright test",
+    "test:production": "cross-env TEST_ENV=production playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "cross-env": "^10.1.0",
+    "typescript": "^6.0.2"
+  }
+}
